@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/toolbar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nested_scroll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="@dimen/scroll_bar_size"
+            android:scrollbarThumbVertical="@color/color_primary"
+            android:scrollbars="vertical"
+            android:visibility="gone">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/menu_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/float_button"
+            android:layout_width="@dimen/float_button_width_height"
+            android:layout_height="@dimen/float_button_width_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/float_button_margin"
+            android:layout_marginRight="@dimen/float_button_margin_right"
+            android:src="@mipmap/bt_ico_mais" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_no_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/nested_scroll_main">
+
+            <TextView
+                android:id="@+id/txt_no_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_no_item_below"
+                android:layout_alignStart="@+id/txt_no_item_below"
+                android:layout_marginTop="@dimen/margin_txt_no_item_below"
+                android:gravity="center"
+                android:text="@string/no_item_list"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_big" />
+
+            <TextView
+                android:id="@+id/txt_no_item_below"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_no_item"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_txt_no_item_below"
+                android:gravity="center"
+                android:text="@string/no_item_list_below"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_big" />
+
+            <ImageView
+                android:layout_width="@dimen/width_img_first_access"
+                android:layout_height="@dimen/height_img_first_access"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_img_bottom"
+                android:background="@mipmap/bg_primeiro_acesso" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

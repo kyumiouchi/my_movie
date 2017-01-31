@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Meus Filmes</string>
+    <string name="search_title">Cadastre seu filme</string>
+    <string name="action_about">Sobre</string>
+    <string name="no_item_list">Você ainda não possui filmes na sua lista</string>
+    <string name="no_item_list_below">Toque no botão para adicionar seu primeiro filme</string>
+    <string name="txt_search_movie">Título do filme</string>
+    <string name="string_confirm_minusculo">pesquisar</string>
+    <string name="txt_title_movie">Título:</string>
+    <string name="txt_title_released">Lançamento</string>
+    <string name="txt_title_time">Duração</string>
+    <string name="txt_name_time">100min</string>
+    <string name="txt_title_genre">Gênero</string>
+    <string name="txt_name_genre">Ação</string>
+    <string name="txt_title_rated">Classificação</string>
+    <string name="txt_title_director">Direção</string>
+    <string name="txt_name_director"><![CDATA[Tom & Jerry]]></string>
+    <string name="txt_title_writer">Escritor</string>
+    <string name="txt_name_writer">J.K.Rownling</string>
+    <string name="txt_title_actor">Elenco</string>
+    <string name="txt_name_actor">Harry Potter</string>
+    <string name="txt_title_language">Idioma</string>
+    <string name="txt_name_language">Português</string>
+    <string name="txt_title_awards">Prêmios</string>
+    <string name="txt_name_awards">Prêmio Nobel da Paz</string>
+    <string name="txt_name_movie">Harry Potter e a Pedra Filosofal</string>
+
+    <string name="type_movie">Filme</string>
+    <string name="type_series">Series</string>
+    <string name="type_episode">Episode</string>
+    <string name="action_delete">Excluir</string>
+
+    <string name="dialog_message">Você deseja apagar este item?</string>
+    <string name="string_cancel">CANCELAR</string>
+    <string name="string_confirm_maiusculo">CONFIRMAR</string>
+    <string name="about_text">Desenvolvido por Yumi Ouchi, o aplicativo Meus filmes foi criado com o objetivo de pesquisar e organizar os filmes desejados pelo usuário, fornecendo informações básicas.</string>
+    <string name="about_text_data">Finalizado em 31/01/2017</string>
+    <string name="txt_title_year">Ano</string>
+    <string name="txt_name_year">2001</string>
+</resources>

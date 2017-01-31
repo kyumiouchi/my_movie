@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/toolbar_layout"/>
+
+    <LinearLayout
+        android:id="@+id/layout_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/topbar">
+
+        <ImageView
+            android:id="@+id/img_girl"
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_top_about"
+            android:background="@mipmap/girl"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_just_text"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="@dimen/margin_just_text"
+            android:layout_marginTop="@dimen/margin_top_about"
+            android:text="@string/about_text"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_big"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/margin_just_text"
+            android:layout_marginRight="@dimen/margin_just_text"
+            android:layout_marginTop="@dimen/margin_top_about_bottom"
+            android:text="@string/about_text_data"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_big"/>
+    </LinearLayout>
+
+</LinearLayout>

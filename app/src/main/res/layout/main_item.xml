@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_main_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="10px"
+                android:elevation="8px">
+
+    <RelativeLayout
+        android:id="@+id/rl_poster"
+        android:layout_width="150px"
+        android:layout_height="200px"
+        android:layout_margin="10px"
+        android:background="@drawable/button_line_rel_information_black">
+
+        <ImageView
+            android:id="@+id/img_poster_holder"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/image_broke2"
+            />
+
+        <ImageView
+            android:id="@+id/img_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_toRightOf="@id/rl_poster"
+        android:ellipsize="end"
+        android:minLines="2"
+        android:maxLines="2"
+        android:text="Harry potter e a pedra filosofal"
+        android:textSize="38px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txt_title"
+        android:layout_marginTop="15px"
+        android:layout_toRightOf="@id/rl_poster">
+
+        <ImageView
+            android:id="@+id/img_star"
+            android:layout_width="@dimen/width_height_img"
+            android:layout_height="@dimen/width_height_img"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/star_icon"/>
+
+        <TextView
+            android:id="@+id/txt_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="45px"/>
+
+        <ImageView
+            android:id="@+id/img_metascore"
+            android:layout_width="@dimen/width_height_img"
+            android:layout_height="@dimen/width_height_img"
+            android:layout_marginLeft="10px"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/metascore_icon"/>
+
+        <TextView
+            android:id="@+id/txt_megascore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="45px"/>
+    </LinearLayout>
+
+</RelativeLayout>

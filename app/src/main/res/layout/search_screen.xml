@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_title_top"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_big"
+            android:text="@string/txt_search_movie" />
+
+        <EditText
+            android:id="@+id/edt_movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:lines="2"
+            android:layout_marginLeft="30px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:maxLength="100"
+            android:inputType="textCapSentences"
+            android:imeOptions="actionSearch"
+            android:layout_marginRight="30px"
+            android:background="@drawable/button_line_rel_information"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_big" >
+            <requestFocus/>
+        </EditText>
+
+        <Button
+            android:id="@+id/bt_confirm_search"
+            android:layout_width="@dimen/search_bt_width"
+            android:layout_height="@dimen/search_bt_height"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28px"
+            android:background="@drawable/button_edged_rounded"
+            android:text="@string/string_confirm_minusculo"
+            android:textAllCaps="false"
+            android:textColor="@color/text_icon"
+            android:textSize="@dimen/text_40px"></Button>
+    </LinearLayout>
+
+</RelativeLayout>
