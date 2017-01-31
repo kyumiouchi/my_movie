@@ -27,7 +27,7 @@ public class MovieApp extends MultiDexApplication {
     private Handler handler;
     private MovieApp context;
 
-    public static final boolean DEBUG_ENVIRONMENT = true;
+    public static final boolean DEBUG_ENVIRONMENT = false;
 
     @Override
     public void onCreate() {
